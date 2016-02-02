@@ -3257,3 +3257,11 @@ Processing by ArticlesController#show as HTML
   Rendered articles/show.html.erb within layouts/application (0.5ms)
   Rendered layouts/_messages.html.erb (0.1ms)
 Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 162.109.233.203 at 2016-02-02 10:22:54 +0100
+Cannot render console from 162.109.233.203! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
