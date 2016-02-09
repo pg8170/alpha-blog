@@ -15,7 +15,7 @@ test "invalid category submission results in failure" do
  get new_category_path
  assert_template 'categories/new'
  assert_no_difference 'Category.count' do
- 	post_via_redirect categories_path,category: {name: ""}
+ 	post_via_redirect categories_path,category: {name: " "}
  end
  assert_template 'categories/new'
  assert_select 'h2.panel-title'
