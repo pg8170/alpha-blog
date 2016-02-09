@@ -12,7 +12,6 @@ class ArticlesController < ApplicationController
 	end
 
 	def create
-	debugger
 	@article = Article.new(article_params)
 	@article.user = curent_user
 	if @article.save
@@ -60,6 +59,7 @@ def set_article
 			flash[:danger] = "You can only edit or delete your own article"
 			redirect_to root_path			
 		end
+
 	end
 
 end
